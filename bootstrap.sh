@@ -8,7 +8,7 @@ kubectl apply -f .infrastructure/namespace.yml
 
 # 2️⃣ Создание секретов и конфигов
 kubectl apply -f .infrastructure/secret.yml
-kubectl apply -f .infrastructure/confgiMap.yml
+kubectl apply -f .infrastructure/configMap.yml
 
 # 3️⃣ Создание Persistent Volume и Claim
 kubectl apply -f .infrastructure/pv.yml
@@ -18,7 +18,7 @@ kubectl apply -f .infrastructure/pvc.yml
 kubectl apply -f .infrastructure/statefulSet.yml
 
 # 5️⃣ Создание Service для MySQL (headless / clusterIP)
-kubectl apply -f .infrastructure/clusterIp.yml
+#kubectl apply -f .infrastructure/clusterIp.yml
 
 # 6️⃣ Деплой приложения todoapp
 kubectl apply -f .infrastructure/deployment.yml
